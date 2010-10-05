@@ -1,0 +1,245 @@
+Job <6299349>, User <ngcrawford>, Project <default>, Status <RUN>, Queue <short
+                     _serial>, Command <mpest bootrep_162.0.control.txt>, Share
+                      group charged </allusers/ngcrawford>
+Tue Sep 14 11:32:07: Submitted from host <iliadaccess02>, CWD <$HOME/data1/seqc
+                     ap/Manuscripts/Tetrapods/Nature/Data/177_loci_12_species_b
+                     ats/alignments_from_loci/177_loci_12_species_bats_alignmen
+                     ts_bootreps>, Output File </n/home06/ngcrawford/sterr.out>
+                     , Re-runnable, Requested Resources <select[mem>3000]>;
+Tue Sep 14 11:32:33: Started on <huybers02>, Execution Home </n/home06/ngcrawfo
+                     rd>, Execution CWD </n/home06/ngcrawford/data1/seqcap/Manu
+                     scripts/Tetrapods/Nature/Data/177_loci_12_species_bats/ali
+                     gnments_from_loci/177_loci_12_species_bats_alignments_boot
+                     reps>;
+Mon Sep 27 15:18:02: Resource usage collected.
+                     MEM: 2 Mbytes;  SWAP: 800 Mbytes;  NTHREAD: 1
+                     PGID: 23793;  PIDs: 23796 
+
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+          local_scratch 
+ loadSched           -  
+ loadStop            -  
+------------------------------------------------------------------------------
+
+Job <6663386>, User <ngcrawford>, Project <default>, Status <RUN>, Queue <short
+                     _serial>, Command <PhyML_3.0_linux64 -i chr17_3001.nex.phy
+                     lip>, Share group charged </allusers/ngcrawford>
+Fri Sep 17 17:55:09: Submitted from host <iliadaccess01>, CWD <$HOME/data1/seqc
+                     ap/Manuscripts/Tetrapods/Nature/Data/Elephants_591_Loci_7S
+                     pecies/alignments_from_loci/Elephants_591_Loci_7Species_al
+                     ignments_nexus>, Output File <n/home06/ngcrawford/sterr.ou
+                     t>, Re-runnable, Requested Resources <select[mem>3000]>;
+Fri Sep 17 17:56:47: Started on <huybers02>, Execution Home </n/home06/ngcrawfo
+                     rd>, Execution CWD </n/home06/ngcrawford/data1/seqcap/Manu
+                     scripts/Tetrapods/Nature/Data/Elephants_591_Loci_7Species/
+                     alignments_from_loci/Elephants_591_Loci_7Species_alignment
+                     s_nexus>;
+Mon Sep 27 15:18:02: Resource usage collected.
+                     MEM: 132 Kbytes;  SWAP: 8 Mbytes;  NTHREAD: 1
+                     PGID: 3691;  PIDs: 3694 
+
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+          local_scratch 
+ loadSched           -  
+ loadStop            -  
+------------------------------------------------------------------------------
+
+Job <6664408>, User <ngcrawford>, Project <default>, Status <RUN>, Queue <short
+                     _serial>, Command <PhyML_3.0_linux64 -i chr2_21284.nex.phy
+                     lip>, Share group charged </allusers/ngcrawford>
+Fri Sep 17 18:03:01: Submitted from host <iliadaccess01>, CWD <$HOME/data1/seqc
+                     ap/Manuscripts/Tetrapods/Nature/Data/XAB_929Loci_5Species/
+                     alignments_from_loci/XAB_929Loci_5Species_alignments_nexus
+                     >, Output File <n/home06/ngcrawford/sterr.out>, Re-runnabl
+                     e, Requested Resources <select[mem>3000]>;
+Fri Sep 17 18:03:31: Started on <huybers02>, Execution Home </n/home06/ngcrawfo
+                     rd>, Execution CWD </n/home06/ngcrawford/data1/seqcap/Manu
+                     scripts/Tetrapods/Nature/Data/XAB_929Loci_5Species/alignme
+                     nts_from_loci/XAB_929Loci_5Species_alignments_nexus>;
+Mon Sep 27 15:18:02: Resource usage collected.
+                     MEM: 136 Kbytes;  SWAP: 8 Mbytes;  NTHREAD: 1
+                     PGID: 4201;  PIDs: 4204 
+
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+          local_scratch 
+ loadSched           -  
+ loadStop            -  
+------------------------------------------------------------------------------
+
+Job <7851917>, User <ngcrawford>, Project <default>, Status <RUN>, Queue <short
+                     _serial>, Command <python /n/home06/ngcrawford/data1/seqca
+                     p/Phylo/phybase.py    -i /n/home06/ngcrawford/data1/seqcap
+                     /Manuscripts/Tetrapods/Nature/Data/177_loci_12_species_bat
+                     s/alignments_from_loci/177_loci_12_species_bats_alignments
+                     _pruned_bootreps/bootrep_60.phylip_phyml_tree.txt    -o /n
+                     /home06/ngcrawford/data1/seqcap/Manuscripts/Tetrapods/Natu
+                     re/Data/177_loci_12_species_bats/alignments_from_loci/177_
+                     loci_12_species_bats_alignments_pruned_bootreps/     -g er
+                     iEur1 -t 'eriEur1 pteVam1 equCab2 bosTau4 canFam2'>, Share
+                      group charged </allusers/ngcrawford>
+Fri Sep 24 13:03:14: Submitted from host <iliadaccess03>, CWD <$HOME/data1/seqc
+                     ap/Manuscripts/Tetrapods/Nature/Data/177_loci_12_species_b
+                     ats/alignments_from_loci/177_loci_12_species_bats_alignmen
+                     ts_pruned_bootreps>, Output File </n/home06/ngcrawford/ste
+                     rr.out>, Re-runnable, Requested Resources <select[mem>3000
+                     ]>;
+Fri Sep 24 13:39:11: Started on <huybers02>, Execution Home </n/home06/ngcrawfo
+                     rd>, Execution CWD </n/home06/ngcrawford/data1/seqcap/Manu
+                     scripts/Tetrapods/Nature/Data/177_loci_12_species_bats/ali
+                     gnments_from_loci/177_loci_12_species_bats_alignments_prun
+                     ed_bootreps>;
+Mon Sep 27 15:18:02: Resource usage collected.
+                     MEM: 40 Mbytes;  SWAP: 229 Mbytes;  NTHREAD: 1
+                     PGID: 4502;  PIDs: 4505 
+
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+          local_scratch 
+ loadSched           -  
+ loadStop            -  
+------------------------------------------------------------------------------
+
+Job <6641164>, User <ngcrawford>, Project <default>, Status <RUN>, Queue <norma
+                     l_serial>, Command <PhyML_3.0_linux64 -i chr5_3415.nex.phy
+                     lip>, Share group charged </allusers/ngcrawford>
+Fri Sep 17 13:35:05: Submitted from host <iliadaccess01>, CWD <$HOME/data1/seqc
+                     ap/Manuscripts/Tetrapods/Nature/Data/Bats_903Loci_5Species
+                     /alignments_from_loci/Bats_903Loci_5Species_alignments_nex
+                     us>, Requested Resources <select[mem>3000]>;
+Fri Sep 17 13:35:26: Started on <huybers02>, Execution Home </n/home06/ngcrawfo
+                     rd>, Execution CWD </n/home06/ngcrawford/data1/seqcap/Manu
+                     scripts/Tetrapods/Nature/Data/Bats_903Loci_5Species/alignm
+                     ents_from_loci/Bats_903Loci_5Species_alignments_nexus>;
+Mon Sep 27 15:18:02: Resource usage collected.
+                     MEM: 2 Mbytes;  SWAP: 11 Mbytes;  NTHREAD: 1
+                     PGID: 26777;  PIDs: 26780 
+
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+          local_scratch 
+ loadSched           -  
+ loadStop            -  
+------------------------------------------------------------------------------
+
+Job <6643009>, User <ngcrawford>, Project <default>, Status <RUN>, Queue <norma
+                     l_serial>, Command <PhyML_3.0_linux64 -i chr13_5324.nex.ph
+                     ylip>, Share group charged </allusers/ngcrawford>
+Fri Sep 17 13:43:37: Submitted from host <iliadaccess01>, CWD <$HOME/data1/seqc
+                     ap/Manuscripts/Tetrapods/Nature/Data/Bats_903Loci_5Species
+                     /alignments_from_loci/Bats_903Loci_5Species_alignments_nex
+                     us>, Output File <n/home06/ngcrawford/sterr.out>, Requeste
+                     d Resources <select[mem>3000]>;
+Fri Sep 17 13:43:54: Started on <huybers02>, Execution Home </n/home06/ngcrawfo
+                     rd>, Execution CWD </n/home06/ngcrawford/data1/seqcap/Manu
+                     scripts/Tetrapods/Nature/Data/Bats_903Loci_5Species/alignm
+                     ents_from_loci/Bats_903Loci_5Species_alignments_nexus>;
+Mon Sep 27 15:18:02: Resource usage collected.
+                     MEM: 140 Kbytes;  SWAP: 8 Mbytes;  NTHREAD: 1
+                     PGID: 27042;  PIDs: 27045 
+
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+          local_scratch 
+ loadSched           -  
+ loadStop            -  
+------------------------------------------------------------------------------
+
+Job <7605860>, User <ngcrawford>, Project <default>, Status <RUN>, Queue <short
+                     _serial>, Command <python /n/home06/ngcrawford/data1/seqca
+                     p/Phylo/phybase.py    -i /n/home06/ngcrawford/data1/seqcap
+                     /Manuscripts/Tetrapods/Nature/Data/567_loci_08_species_bat
+                     s/alignments_from_loci/567_loci_08_species_bats_alignments
+                     _pruned_bootreps/bootrep_14.phylip_phyml_tree.txt    -o /n
+                     /home06/ngcrawford/data1/seqcap/Manuscripts/Tetrapods/Natu
+                     re/Data/567_loci_08_species_bats/alignments_from_loci/567_
+                     loci_08_species_bats_alignments_pruned_bootreps    -g eriE
+                     ur1 -t 'eriEur1 pteVam1 equCab2 bosTau4 canFam2'>, Share g
+                     roup charged </allusers/ngcrawford>
+Thu Sep 23 23:08:17: Submitted from host <iliadaccess01>, CWD <$HOME/data1/seqc
+                     ap/Manuscripts/Tetrapods/Nature/Data/683_loci_07_species_b
+                     ats/alignments_from_loci/683_loci_07_species_bats_alignmen
+                     ts_pruned_bootreps>, Output File </n/home06/ngcrawford/ste
+                     rr.out>, Re-runnable, Requested Resources <select[mem>3000
+                     ]>;
+Thu Sep 23 23:08:21: Started on <wofsy011>, Execution Home </n/home06/ngcrawfor
+                     d>, Execution CWD </n/home06/ngcrawford/data1/seqcap/Manus
+                     cripts/Tetrapods/Nature/Data/683_loci_07_species_bats/alig
+                     nments_from_loci/683_loci_07_species_bats_alignments_prune
+                     d_bootreps>;
+Mon Sep 27 15:17:22: Resource usage collected.
+                     MEM: 2 Mbytes;  SWAP: 70 Mbytes;  NTHREAD: 1
+                     PGID: 13084;  PIDs: 13087 
+
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+          local_scratch 
+ loadSched           -  
+ loadStop            -  
+------------------------------------------------------------------------------
+
+Job <7605879>, User <ngcrawford>, Project <default>, Status <RUN>, Queue <short
+                     _serial>, Command <python /n/home06/ngcrawford/data1/seqca
+                     p/Phylo/phybase.py    -i /n/home06/ngcrawford/data1/seqcap
+                     /Manuscripts/Tetrapods/Nature/Data/567_loci_08_species_bat
+                     s/alignments_from_loci/567_loci_08_species_bats_alignments
+                     _pruned_bootreps/bootrep_36.phylip_phyml_tree.txt    -o /n
+                     /home06/ngcrawford/data1/seqcap/Manuscripts/Tetrapods/Natu
+                     re/Data/567_loci_08_species_bats/alignments_from_loci/567_
+                     loci_08_species_bats_alignments_pruned_bootreps    -g eriE
+                     ur1 -t 'eriEur1 pteVam1 equCab2 bosTau4 canFam2'>, Share g
+                     roup charged </allusers/ngcrawford>
+Thu Sep 23 23:08:18: Submitted from host <iliadaccess01>, CWD <$HOME/data1/seqc
+                     ap/Manuscripts/Tetrapods/Nature/Data/683_loci_07_species_b
+                     ats/alignments_from_loci/683_loci_07_species_bats_alignmen
+                     ts_pruned_bootreps>, Output File </n/home06/ngcrawford/ste
+                     rr.out>, Re-runnable, Requested Resources <select[mem>3000
+                     ]>;
+Thu Sep 23 23:08:42: Started on <wofsy011>, Execution Home </n/home06/ngcrawfor
+                     d>, Execution CWD </n/home06/ngcrawford/data1/seqcap/Manus
+                     cripts/Tetrapods/Nature/Data/683_loci_07_species_bats/alig
+                     nments_from_loci/683_loci_07_species_bats_alignments_prune
+                     d_bootreps>;
+Mon Sep 27 15:17:22: Resource usage collected.
+                     MEM: 2 Mbytes;  SWAP: 70 Mbytes;  NTHREAD: 1
+                     PGID: 13088;  PIDs: 13091 
+
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+          local_scratch 
+ loadSched           -  
+ loadStop            -  

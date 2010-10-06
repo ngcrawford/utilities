@@ -93,8 +93,7 @@ def kill_restart_job(item, bsub_prefix):
     
     # start new job
     bsub_prefix = shlex.split(bsub_prefix)
-    new_job = shlex.split(item.command)
-    new_job = bsub_prefix + new_job
+    new_job = bsub_prefix + [item.command]
     subprocess.Popen(new_job)
     return 1
 
@@ -138,6 +137,7 @@ def parser():
 
 tokens = parser()
 args = getargs()
+print args
 
 
 if not sys.stdin.isatty(): # checks that stdin is present.
@@ -150,21 +150,21 @@ else:
 for item in tokens.searchString(data):
     time_diff = (datetime.today() - item.date)
     hours_elapsed = time_diff.days*24.0 + (time_diff.seconds/60.0)/60.0
-    print hours_elapsed
+
 
     # Auto determine which jobs to restart
     if args.kill_restart:
         if item.queue == 'short_serial':
-            if hours_elapsed > 1:
-                print 'here'
-                #kill_restart_job(item, bsub_prefix)
-                continue
-                pass
+            if item.status == 'RUN':
+                if hours_elapsed > 1:
+                    kill_restart_job(item, args.rstring)
+                    continue
+                    pass
     
         if item.queue == 'normal_serial':
             if hours_elapsed > 24:
-                print 'here too'
-                #kill_restart_job(item, bsub_prefix)
-                continue
-                pass
+                if item.status == 'RUN':
+                    kill_restart_job(item, args.rstring)
+                    continue
+                    pass
     

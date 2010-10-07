@@ -85,6 +85,12 @@ def cleanDateTime(parse_string,loc, toks):
 # Misc. functions
 # ---------------
 
+def print_bjobs(shlex_job_list):
+    command_string = ''
+    for command in shlex_job_list:
+            command_string += command + ' '
+    return command_string
+
 def kill_restart_job(item, bsub_prefix):
     # kill job
     kill_command = "bkill -R %s" % item.job_id
@@ -93,7 +99,10 @@ def kill_restart_job(item, bsub_prefix):
     
     # start new job
     bsub_prefix = shlex.split(bsub_prefix)
-    new_job = bsub_prefix + [item.command]
+    command = "\"%s\"" % item.command
+    new_job = bsub_prefix + [command]
+    print 'Reexecuting %s' % item.job_id
+    print print_bjobs(new_job), '\n'
     subprocess.Popen(new_job)
     return 1
 

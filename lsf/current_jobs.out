@@ -1,0 +1,222 @@
+
+Job <8406361>, User <ngcrawford>, Project <default>, Status <SSUSP>, Queue <nor
+                     mal_serial>, Command <python /n/home06/ngcrawford/data1/se
+                     qcap/Phylo/run_mpest.py     --control-file=/n/home06/ngcra
+                     wford/data1/seqcap/Manuscripts/Tetrapods/Nature/Data/917Lo
+                     ci_19Species/alignments_from_loci/917Loci_19Species_alignm
+                     ents_bootreps/bootrep_537.control     --iterations=400    
+                      --cores=1     --output=/n/home06/ngcrawford/data1/seqcap/
+                     Manuscripts/Tetrapods/Nature/Data/917Loci_19Species/alignm
+                     ents_from_loci/917Loci_19Species_alignments_bootreps/bootr
+                     ep_537400s.mpest.tree>, Share group charged </allusers/ngc
+                     rawford>
+Mon Oct  4 18:10:17: Submitted from host <iliadaccess02>, CWD <$HOME/data1/seqc
+                     ap/Manuscripts/Tetrapods/Nature/Data/917Loci_19Species/ali
+                     gnments_from_loci/917Loci_19Species_alignments_bootreps>, 
+                     Output File </n/home06/ngcrawford/sterr.out>, Requested Re
+                     sources <select[mem>3000]>;
+Tue Oct  5 03:38:43: Started on <hero5007>, Execution Home </n/home06/ngcrawfor
+                     d>, Execution CWD </n/home06/ngcrawford/data1/seqcap/Manus
+                     cripts/Tetrapods/Nature/Data/917Loci_19Species/alignments_
+                     from_loci/917Loci_19Species_alignments_bootreps>;
+Thu Oct  7 17:07:56: Resource usage collected.
+                     The CPU time used is 1472 seconds.
+                     MEM: 23 Mbytes;  SWAP: 921 Mbytes;  NTHREAD: 5
+                     PGID: 14752;  PIDs: 14752 14753 14755 19137 
+
+ SUSPENDING REASONS:
+ Job was preempted by a higher priority job;
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+          local_scratch 
+ loadSched           -  
+ loadStop            -  
+------------------------------------------------------------------------------
+
+Job <8405797>, User <ngcrawford>, Project <default>, Status <RUN>, Queue <norma
+                     l_serial>, Command <python /n/home06/ngcrawford/data1/seqc
+                     ap/Phylo/run_mpest.py     --control-file=/n/home06/ngcrawf
+                     ord/data1/seqcap/Manuscripts/Tetrapods/Nature/Data/917Loci
+                     _19Species/alignments_from_loci/917Loci_19Species_alignmen
+                     ts_bootreps/bootrep_659.control     --iterations=400     -
+                     -cores=1     --output=/n/home06/ngcrawford/data1/seqcap/Ma
+                     nuscripts/Tetrapods/Nature/Data/917Loci_19Species/alignmen
+                     ts_from_loci/917Loci_19Species_alignments_bootreps/bootrep
+                     _659400s.mpest.tree>, Share group charged </allusers/ngcra
+                     wford>
+Mon Oct  4 18:10:06: Submitted from host <iliadaccess02>, CWD <$HOME/data1/seqc
+                     ap/Manuscripts/Tetrapods/Nature/Data/917Loci_19Species/ali
+                     gnments_from_loci/917Loci_19Species_alignments_bootreps>, 
+                     Output File </n/home06/ngcrawford/sterr.out>, Requested Re
+                     sources <select[mem>3000]>;
+Mon Oct  4 18:12:13: Started on <huybers02>, Execution Home </n/home06/ngcrawfo
+                     rd>, Execution CWD </n/home06/ngcrawford/data1/seqcap/Manu
+                     scripts/Tetrapods/Nature/Data/917Loci_19Species/alignments
+                     _from_loci/917Loci_19Species_alignments_bootreps>;
+Thu Oct  7 17:11:15: Resource usage collected.
+                     MEM: 100 Kbytes;  SWAP: 693 Mbytes;  NTHREAD: 1
+                     PGID: 25542;  PIDs: 25546 
+
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+          local_scratch 
+ loadSched           -  
+ loadStop            -  
+------------------------------------------------------------------------------
+
+Job <8405810>, User <ngcrawford>, Project <default>, Status <RUN>, Queue <norma
+                     l_serial>, Command <python /n/home06/ngcrawford/data1/seqc
+                     ap/Phylo/run_mpest.py     --control-file=/n/home06/ngcrawf
+                     ord/data1/seqcap/Manuscripts/Tetrapods/Nature/Data/917Loci
+                     _19Species/alignments_from_loci/917Loci_19Species_alignmen
+                     ts_bootreps/bootrep_60.control     --iterations=400     --
+                     cores=1     --output=/n/home06/ngcrawford/data1/seqcap/Man
+                     uscripts/Tetrapods/Nature/Data/917Loci_19Species/alignment
+                     s_from_loci/917Loci_19Species_alignments_bootreps/bootrep_
+                     60400s.mpest.tree>, Share group charged </allusers/ngcrawf
+                     ord>
+Mon Oct  4 18:10:06: Submitted from host <iliadaccess02>, CWD <$HOME/data1/seqc
+                     ap/Manuscripts/Tetrapods/Nature/Data/917Loci_19Species/ali
+                     gnments_from_loci/917Loci_19Species_alignments_bootreps>, 
+                     Output File </n/home06/ngcrawford/sterr.out>, Requested Re
+                     sources <select[mem>3000]>;
+Mon Oct  4 18:13:50: Started on <huybers02>, Execution Home </n/home06/ngcrawfo
+                     rd>, Execution CWD </n/home06/ngcrawford/data1/seqcap/Manu
+                     scripts/Tetrapods/Nature/Data/917Loci_19Species/alignments
+                     _from_loci/917Loci_19Species_alignments_bootreps>;
+Thu Oct  7 17:11:15: Resource usage collected.
+                     MEM: 92 Kbytes;  SWAP: 693 Mbytes;  NTHREAD: 1
+                     PGID: 25609;  PIDs: 25613 
+
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+          local_scratch 
+ loadSched           -  
+ loadStop            -  
+------------------------------------------------------------------------------
+
+Job <8406675>, User <ngcrawford>, Project <default>, Status <SSUSP>, Queue <nor
+                     mal_serial>, Command <python /n/home06/ngcrawford/data1/se
+                     qcap/Phylo/run_mpest.py     --control-file=/n/home06/ngcra
+                     wford/data1/seqcap/Manuscripts/Tetrapods/Nature/Data/917Lo
+                     ci_19Species/alignments_from_loci/917Loci_19Species_alignm
+                     ents_bootreps/bootrep_699.control     --iterations=400    
+                      --cores=1     --output=/n/home06/ngcrawford/data1/seqcap/
+                     Manuscripts/Tetrapods/Nature/Data/917Loci_19Species/alignm
+                     ents_from_loci/917Loci_19Species_alignments_bootreps/bootr
+                     ep_699400s.mpest.tree>, Share group charged </allusers/ngc
+                     rawford>
+Mon Oct  4 18:10:23: Submitted from host <iliadaccess02>, CWD <$HOME/data1/seqc
+                     ap/Manuscripts/Tetrapods/Nature/Data/917Loci_19Species/ali
+                     gnments_from_loci/917Loci_19Species_alignments_bootreps>, 
+                     Output File </n/home06/ngcrawford/sterr.out>, Requested Re
+                     sources <select[mem>3000]>;
+Tue Oct  5 09:22:36: Started on <hero5003>, Execution Home </n/home06/ngcrawfor
+                     d>, Execution CWD </n/home06/ngcrawford/data1/seqcap/Manus
+                     cripts/Tetrapods/Nature/Data/917Loci_19Species/alignments_
+                     from_loci/917Loci_19Species_alignments_bootreps>;
+Thu Oct  7 17:10:03: Resource usage collected.
+                     The CPU time used is 4111 seconds.
+                     MEM: 23 Mbytes;  SWAP: 921 Mbytes;  NTHREAD: 5
+                     PGID: 23394;  PIDs: 23394 23395 23397 28869 
+
+ SUSPENDING REASONS:
+ Job was preempted by a higher priority job;
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+          local_scratch 
+ loadSched           -  
+ loadStop            -  
+------------------------------------------------------------------------------
+
+Job <8406681>, User <ngcrawford>, Project <default>, Status <SSUSP>, Queue <nor
+                     mal_serial>, Command <python /n/home06/ngcrawford/data1/se
+                     qcap/Phylo/run_mpest.py     --control-file=/n/home06/ngcra
+                     wford/data1/seqcap/Manuscripts/Tetrapods/Nature/Data/917Lo
+                     ci_19Species/alignments_from_loci/917Loci_19Species_alignm
+                     ents_bootreps/bootrep_350.control     --iterations=400    
+                      --cores=1     --output=/n/home06/ngcrawford/data1/seqcap/
+                     Manuscripts/Tetrapods/Nature/Data/917Loci_19Species/alignm
+                     ents_from_loci/917Loci_19Species_alignments_bootreps/bootr
+                     ep_350400s.mpest.tree>, Share group charged </allusers/ngc
+                     rawford>
+Mon Oct  4 18:10:23: Submitted from host <iliadaccess02>, CWD <$HOME/data1/seqc
+                     ap/Manuscripts/Tetrapods/Nature/Data/917Loci_19Species/ali
+                     gnments_from_loci/917Loci_19Species_alignments_bootreps>, 
+                     Output File </n/home06/ngcrawford/sterr.out>, Requested Re
+                     sources <select[mem>3000]>;
+Tue Oct  5 09:25:40: Started on <hero5003>, Execution Home </n/home06/ngcrawfor
+                     d>, Execution CWD </n/home06/ngcrawford/data1/seqcap/Manus
+                     cripts/Tetrapods/Nature/Data/917Loci_19Species/alignments_
+                     from_loci/917Loci_19Species_alignments_bootreps>;
+Thu Oct  7 17:10:03: Resource usage collected.
+                     The CPU time used is 4001 seconds.
+                     MEM: 23 Mbytes;  SWAP: 921 Mbytes;  NTHREAD: 5
+                     PGID: 23558;  PIDs: 23558 23559 23561 28868 
+
+ SUSPENDING REASONS:
+ Job was preempted by a higher priority job;
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+          local_scratch 
+ loadSched           -  
+ loadStop            -  
+------------------------------------------------------------------------------
+
+Job <8406366>, User <ngcrawford>, Project <default>, Status <SSUSP>, Queue <nor
+                     mal_serial>, Command <python /n/home06/ngcrawford/data1/se
+                     qcap/Phylo/run_mpest.py     --control-file=/n/home06/ngcra
+                     wford/data1/seqcap/Manuscripts/Tetrapods/Nature/Data/917Lo
+                     ci_19Species/alignments_from_loci/917Loci_19Species_alignm
+                     ents_bootreps/bootrep_692.control     --iterations=400    
+                      --cores=1     --output=/n/home06/ngcrawford/data1/seqcap/
+                     Manuscripts/Tetrapods/Nature/Data/917Loci_19Species/alignm
+                     ents_from_loci/917Loci_19Species_alignments_bootreps/bootr
+                     ep_692400s.mpest.tree>, Share group charged </allusers/ngc
+                     rawford>
+Mon Oct  4 18:10:17: Submitted from host <iliadaccess02>, CWD <$HOME/data1/seqc
+                     ap/Manuscripts/Tetrapods/Nature/Data/917Loci_19Species/ali
+                     gnments_from_loci/917Loci_19Species_alignments_bootreps>, 
+                     Output File </n/home06/ngcrawford/sterr.out>, Requested Re
+                     sources <select[mem>3000]>;
+Tue Oct  5 03:40:53: Started on <hero4407>, Execution Home </n/home06/ngcrawfor
+                     d>, Execution CWD </n/home06/ngcrawford/data1/seqcap/Manus
+                     cripts/Tetrapods/Nature/Data/917Loci_19Species/alignments_
+                     from_loci/917Loci_19Species_alignments_bootreps>;
+Thu Oct  7 17:08:18: Resource usage collected.
+                     The CPU time used is 1887 seconds.
+                     MEM: 23 Mbytes;  SWAP: 921 Mbytes;  NTHREAD: 5
+                     PGID: 4238;  PIDs: 4238 4239 4241 7255 
+
+ SUSPENDING REASONS:
+ Job was preempted by a higher priority job;
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+          local_scratch 
+ loadSched           -  
+ loadStop            -  
+

@@ -93,17 +93,17 @@ def print_bjobs(shlex_job_list):
 
 def kill_restart_job(item, bsub_prefix):
     # kill job
-    kill_command = "bkill -R %s" % item.job_id
+    kill_command = "bkill -R %s" % item.job
     kill_command = shlex.split(kill_command)
-    subprocess.Popen(kill_command)
+    #subprocess.Popen(kill_command)
     
     # start new job
-    bsub_prefix = shlex.split(bsub_prefix)
     command = "\"%s\"" % item.command
-    new_job = bsub_prefix + [command]
-    print 'Reexecuting %s' % item.job_id
-    print print_bjobs(new_job), '\n'
-    subprocess.Popen(new_job)
+    print bsub_prefix
+    new_job = bsub_prefix + ' ' + command
+    print 'Reexecuting %s' % item.job
+    print new_job
+    #subprocess.Popen(new_job)
     return 1
 
 # --------------------------

@@ -99,10 +99,9 @@ def kill_restart_job(item, bsub_prefix):
     
     # start new job
     command = "\"%s\"" % item.command
-    print bsub_prefix
     new_job = bsub_prefix + ' ' + command
     print 'Reexecuting %s' % item.job
-    print     
+    print new_job    
     subprocess.Popen(new_job)
     return 1
 
@@ -146,7 +145,6 @@ def parser():
 
 tokens = parser()
 args = getargs()
-print args
 
 
 if not sys.stdin.isatty(): # checks that stdin is present.
@@ -164,7 +162,7 @@ for item in tokens.searchString(data):
     # Auto determine which jobs to restart
     if args.kill_restart:
         if item.queue == 'short_serial':
-            if item.status == 'RUN':
+            if item.status in ('RUN', 'SUSP'):
                 if hours_elapsed > 1:
                     kill_restart_job(item, args.rstring)
                     continue
@@ -172,7 +170,7 @@ for item in tokens.searchString(data):
     
         if item.queue == 'normal_serial':
             if hours_elapsed > 24:
-                if item.status == 'RUN':
+                if item.status in ('RUN', 'SUSP'):
                     kill_restart_job(item, args.rstring)
                     continue
                     pass

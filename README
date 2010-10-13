@@ -1,0 +1,3 @@
+This repository contains general unix utilities written by Nicholas Crawford.
+
+Currently it only contains one script, pybmig.py, that will accept bsub -l output and automatically kill and resubmit stalled jobs.  It is possible to set the amount of time required to determine if a job has hung.  More details may be obtained by typing pybmig.py --help at the command prompt.

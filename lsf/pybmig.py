@@ -39,7 +39,7 @@ from datetime import datetime
 def getargs():
     parser = argparse.ArgumentParser(description='Process some integers.')
 
-    parser.add_argument('-t','-time', nargs=2, default= [1,0], dest='time',
+    parser.add_argument('-t','-time', nargs=2, default= [0,0], dest='input_time',
                         help="""Number of days and hours after which 
                                 jobs should be killed and restarted.""")
                     
@@ -57,7 +57,7 @@ def getargs():
                         help="""Kills and restarts hung jobs.  Jobs must be RUNNING, 
                                 but have run longer than their queue allows.""")
                         
-    parser.add_argument('-v','-verbose', action='store_true',
+    parser.add_argument('-v','-verbose', action='store_true', dest='verbose',
                         help="Turn on verbose mode.")
 
     args = parser.parse_args()
@@ -70,9 +70,11 @@ def getargs():
 def cleanCommmand(parse_string,loc, toks):
     command = toks[0].split('\n')
     text = ''
-    for item in command:
-        item = item.strip()
+    for count, item in enumerate(command):
+        if count >= 1:
+            item = item[21:]
         text += item
+    text = text.strip()
     return text
 
 def cleanDateTime(parse_string,loc, toks):
@@ -91,18 +93,23 @@ def print_bjobs(shlex_job_list):
             command_string += command + ' '
     return command_string
 
-def kill_restart_job(item, bsub_prefix):
+def kill_restart_job(item, bsub_prefix, verbose):
     # kill job
-    kill_command = "bkill -R %s" % item.job
+    kill_command = "bkill -R %s" % item.job # do hard '-R' kill
     kill_command = shlex.split(kill_command)
     subprocess.Popen(kill_command)
     
     # start new job
-    command = "\"%s\"" % item.command
+    command = "\'%s\'" % item.command
     new_job = bsub_prefix + ' ' + command
-    print 'Reexecuting %s' % item.job
-    print new_job    
-    subprocess.Popen(new_job)
+    new_job_split = shlex.split(new_job)
+    if verbose:
+    	print 'Reexecuting %s' % item.job
+    	print new_job
+    	subprocess.Popen(new_job_split)
+    else:
+	    subprocess.Popen(new_job_split)
+	
     return 1
 
 # --------------------------
@@ -155,23 +162,34 @@ else:
 
 # do stuff with results
 for item in tokens.searchString(data):
+	# do time calculations
     time_diff = (datetime.today() - item.date)
     hours_elapsed = time_diff.days*24.0 + (time_diff.seconds/60.0)/60.0
 
+    if args.input_time:
+        args.input_time = [int(x) for x in args.input_time]
+        min_time = args.input_time[0]*24 + args.input_time[1]
+    if args.verbose:
+        print "Queue:", item.queue
+        print "Status:", item.status
+        print "Hours Elapsed:", hours_elapsed
+        print "Command:", item.command
+        print "---------------------------------\n"
 
     # Auto determine which jobs to restart
     if args.kill_restart:
         if item.queue == 'short_serial':
-            if item.status in ('RUN', 'SUSP'):
-                if hours_elapsed > 1:
-                    kill_restart_job(item, args.rstring)
-                    continue
-                    pass
-    
+            if item.status in ('RUN', 'SSUSP'):
+                if hours_elapsed > min_time:
+                    kill_restart_job(item, args.rstring, args.verbose)
+                elif hours_elapsed > 1:
+                    kill_restart_job(item, args.rstring, args.verbose)
+
         if item.queue == 'normal_serial':
-            if hours_elapsed > 24:
-                if item.status in ('RUN', 'SUSP'):
-                    kill_restart_job(item, args.rstring)
-                    continue
-                    pass
-    
+            if item.status in ('RUN', 'SSUSP'):
+                if hours_elapsed > min_time:
+                    kill_restart_job(item, args.rstring, args.verbose)
+                if hours_elapsed > 24:
+                    kill_restart_job(item, args.rstring, args.verbose)
+print 'restart completed'
+sys.exit()
